@@ -1,0 +1,59 @@
+@mixin button ($background, $hover, $active, $text) {
+  background-color: $background;
+  color: $text;
+  &[disabled] {
+    opacity: .5;
+  }
+  &:hover,
+  &:focus {
+    background-color: $hover;
+  }
+  &:active {
+    background-color: $active
+  }
+}
+
+button {
+  text-transform: none;
+  margin: 0;
+  touch-action: manipulation;
+  overflow: visible;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 0;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .9rem;
+  outline: none;
+  &[disabled] {
+    cursor: not-allowed;
+  }
+  &--primary {
+    @include button($blue-light-1, $blue, $blue-dark-1, $white);
+  }
+  &--secondary {
+    @include button($gray-light-3, $gray-light-1, $gray, $gray-dark-5);
+  }
+  &--cancel {
+    @include button($gray-light-3, $gray-light-1, $gray, $gray-dark-5);
+  }
+  &--delete {
+    @include button($error-dark-1, $error-dark-2, $error-dark-3, $white);
+  }
+  &--sm {
+    padding: .4rem;
+    font-size: .8rem;
+  }
+  &--lg {
+    padding: 1rem 1.6rem;
+    font-size: 1.2rem;
+  }
+}

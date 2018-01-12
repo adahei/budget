@@ -1,0 +1,39 @@
+.list {
+  list-style: none;
+  margin: .5rem 0;
+  padding: 0;
+  > li {
+    display: grid;
+    grid-template-columns: .8rem 1fr 1fr 40px;
+    align-items: center;
+    padding: .2rem;
+    background-color: $white;
+    &:nth-child(odd) {
+      background-color: $gray-light-4;
+    }
+    &.sum {
+      background-color: $gray-light-3;
+      border-top: 1px solid $gray-light-1;
+    }
+    .color {
+      width: 5px;
+      height: 100%;
+    }
+    .name {
+      grid-column: 2;
+      .recurrent {
+        color: $gray-dark-3;
+        font-size: .8rem;
+      }
+    }
+    .number {
+      grid-column: 3;
+      text-align: right;
+      margin-right: 1rem;
+    }
+    .btn--delete {
+      grid-column: 4;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+//
+// BREAKPOINTS
+// -------------------------------------------------------------
+$bp-xs: 480px !default;
+$bp-sm: 768px !default;
+$bp-md: 992px !default;
+$bp-lg: 1200px !default;
+$bp-xl: 1600px !default;
+
+//
+// COLORS
+// -------------------------------------------------------------
+$white:        #ffffff;
+$gray-light-4: #fafafa;
+$gray-light-3: #f4f4f4;
+$gray-light-2: #eeeeee;
+$gray-light-1: #e2e2e2;
+$gray:         #bfbfbf;
+$gray-dark-3:  #999999;
+$gray-dark-4:  #666666;
+$gray-dark-5:  #444444;
+$gray-dark-6:  #222222;
+$black:        #000000;
+
+$blue:           #246EB9;
+$blue-light-1:   lighten($blue, 10);
+$blue-light-2:   lighten($blue, 20);
+$blue-light-3:   lighten($blue, 30);
+$blue-light-4:   lighten($blue, 40);
+$blue-light-5:   lighten($blue, 50);
+$blue-light-6:   lighten($blue, 55);
+
+$blue-dark-1:    darken($blue, 10);
+$blue-dark-2:    darken($blue, 20);
+$blue-dark-3:    darken($blue, 30);
+
+$green: #4CB944;
+$green-light-1:   lighten($green, 10);
+$green-light-2:   lighten($green, 20);
+$green-light-3:   lighten($green, 30);
+$green-light-4:   lighten($green, 40);
+$green-light-5:   lighten($green, 45);
+
+$green-dark-1:    darken($green, 10);
+$green-dark-2:    darken($green, 20);
+$green-dark-3:    darken($green, 30);
+
+$warning:          #F5EE9E;
+$warning-light-1:  lighten($warning, 10);
+$warning-dark-1:   #F4E649;
+$warning-dark-2:   #E29B00;
+$warning-dark-3:   darken($warning-dark-2, 10);
+$warning-dark-4:   darken($warning-dark-2, 20);
+
+$error: #F06543;
+$error-light-1: lighten($error, 10);
+$error-light-2: lighten($error, 20);
+$error-light-3: lighten($error, 30);
+$error-dark-1: darken($error, 10);
+$error-dark-2: darken($error, 20);
+$error-dark-3: darken($error, 30);
+$error-dark-4: darken($error, 40);
+
+$page-background: $gray-light-4;
+
+// type
+$base-font-size: 16px;
+$base-font-family: 'Raleway', Helvetica, Arial, sans-serif;
+$header-font-family: 'Raleway', Helvetica, Arial, sans-serif;
+// $monospace-font-family: 'Source Code Pro', 'Monaco', 'Consolas', monospace;
+$monospace-font-family: $base-font-family;

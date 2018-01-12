@@ -622,6 +622,9 @@ export default {
   @media (min-width: $bp-md) {
     flex-direction: row;
   }
+  .box {
+    flex: 1;
+  }
 }
 .color-picker {
   list-style: none;

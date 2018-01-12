@@ -45,18 +45,20 @@ export default {
   height: 100%;
   z-index: 999;
   background-color: rgba(0,0,0,.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: opacity .3s ease;
   &__content {
     position: relative;
+    top: 1rem;
+    margin: 0 auto;
     width: 98%;
     max-width: 700px;
     min-height: 100px;
     max-height: 80%;
+    display: flex;
+    flex-direction: column;
     background-color: $white;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
+    backface-visibility: hidden;
     transition: all .3s ease;
     &__header {
       display: flex;
@@ -72,9 +74,14 @@ export default {
       }
     }
     &__main {
+      position: relative;
+      flex: 1;
       padding: 1rem 2rem;
+      overflow: auto;
+      max-height: 100%;
     }
     &__footer {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -95,7 +102,6 @@ export default {
 
 .modal-enter .modal__content,
 .modal-leave-active .modal__content {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 </style>
